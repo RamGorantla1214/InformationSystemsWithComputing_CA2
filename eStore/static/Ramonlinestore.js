@@ -3,7 +3,7 @@ websiteproductslist =
         {
             "id": "1",
             "name": "T Shirt 1",
-            "category": "T Shirt",
+            "category": "Formal Shirts",
             "featuredimage": "../static/product_images/img1.jpg",
             "price": "100€"
         },
@@ -11,7 +11,7 @@ websiteproductslist =
         {
             "id": "2",
             "name": "T Shirt 2",
-            "category": "T Shirt",
+            "category": "Tees",
             "featuredimage": "../static/product_images/img2.jpg",
             "price": "50€"
         },
@@ -19,7 +19,7 @@ websiteproductslist =
         {
             "id": "3",
             "name": "T Shirt 3",
-            "category": "T Shirt",
+            "category": "Formal Shirts",
             "featuredimage": "../static/product_images/img3.jpg",
             "price": "70€"
         },
@@ -27,7 +27,7 @@ websiteproductslist =
         {
             "id": "4",
             "name": "T Shirt 4",
-            "category": "Shirt",
+            "category": "Formal Shirts",
             "featuredimage": "../static/product_images/img4.jpg",
             "price": "110€"
         },
@@ -35,7 +35,7 @@ websiteproductslist =
         {
             "id": "5",
             "name": "T Shirt 5",
-            "category": "T Shirt",
+            "category": "Tees",
             "featuredimage": "../static/product_images/img5.jpg",
             "price": "150€"
         },
@@ -43,7 +43,7 @@ websiteproductslist =
         {
             "id": "6",
             "name": "T Shirt 6",
-            "category": "T Shirt",
+            "category": "Tees",
             "featuredimage": "../static/product_images/img6.jpg",
             "price": "60€"
         },
@@ -51,7 +51,7 @@ websiteproductslist =
         {
             "id": "7",
             "name": "T Shirt 7",
-            "category": "T Shirt",
+            "category": "Tees",
             "featuredimage": "../static/product_images/img7.jpg",
             "price": "70€"
         },
@@ -59,7 +59,7 @@ websiteproductslist =
         {
             "id": "8",
             "name": "T Shirt 8",
-            "category": "T Shirt",
+            "category": "Tees",
             "featuredimage": "../static/product_images/img8.jpg",
             "price": "90€"
         },
@@ -67,7 +67,7 @@ websiteproductslist =
         {
             "id": "9",
             "name": "T Shirt 9",
-            "category": "T Shirt",
+            "category": "Tees",
             "featuredimage": "../static/product_images/img9.jpg",
             "price": "80€"
         }
@@ -359,7 +359,7 @@ function GetProductDetailHtml(jsonarray) {
 
 
 function GetProductHtml(jsonarray) {
-    $("#productcatalog").html("");
+    $("#productcards").html("");
     dynamichtml = "";
     $.each(jsonarray, function () {
         ratinghtml = "";
@@ -372,7 +372,7 @@ function GetProductHtml(jsonarray) {
         dynamichtml += "<li class='cards_item'><div class='card'><a href='/product?id=" + this.id + "'><div class='card_image'><img src='" + this.featuredimage + "'></div></a><div class='card_content'><h1 class='card_title'>" + this.name + "</h1> <div class='card_price'> <span> Price: " + this.price + "</span></div><br/> <button onclick='AddtoCart(" + this.id + ")'' id='view_product_detail' class='btn card_btn btn-grad'>Buy</button> </div></div></li>";
 
     });
-    $("#productcatalog").append(dynamichtml);
+    $("#productcards").append(dynamichtml);
 }
 
 

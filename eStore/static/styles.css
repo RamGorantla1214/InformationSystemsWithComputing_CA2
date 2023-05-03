@@ -1,4 +1,3 @@
-
 h3{
     margin-top:50px!important;
     margin-right: 250px!important;
@@ -24,6 +23,9 @@ h3{
   .main {
     position: relative;
     margin: 0 auto;
+  }
+  .navLinks{
+    position: absolute;
   }
 
   .container
@@ -75,12 +77,68 @@ h3{
     line-height: 40px;
     font-size: 18px;
     font-weight: 500;
-    display: block;
     padding: 0 8px;
     text-decoration: none;
+  }
+
+  .nav>.nav-links>ul li {
+    display: inline-block;
+    margin: 10px;
   }
 
   .nav>.nav-links>ul {
     list-style: none;
     position: relative;
   }
+
+  .nav>.nav-links {
+    font-size: 18px;
+    display: inline;
+    overflow: hidden;
+    bottom: 0;
+  }
+
+  #productsearch{
+    width:35%;
+  }
+
+  #productcatalog {
+    margin-left: 55px;
+  }
+
+  .cards_item{
+    border-radius:5px;    
+    display: flex;
+    padding: 1rem;
+  }
+
+  .card {
+    border-radius: 0.28rem;
+    box-shadow: 0 1px 50px -4px rgb(0 0 0 / 23%);
+    display: flex;
+    overflow: hidden;
+  }
+
+  .cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  float: left;
+  margin-left:75px;
+  }
+
+img{
+  height: 350px;
+  width: 300px;
+}
+
+h1{
+font-size: 1.5rem!important;
+}
+
+.card_content{
+  margin-left: 35%;
+}
