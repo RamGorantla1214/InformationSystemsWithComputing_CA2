@@ -14,7 +14,6 @@ h3{
 
   body {
     color: #272727;
-    /*font-family: Open Sans, Roboto, Arial, Helvetica, sans-serif, SimSun;*/
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0;
@@ -30,9 +29,58 @@ h3{
   .container
   {
     margin:10px;
-    width: auto;
+    max-width:100%!important;
     border-radius: 5px;
-        background-color: black;
-        padding: 20px;
+    background-color: black;
+    margin-top:5px!important;
+    z-index: 10;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    position: sticky;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.45);
+    top: 0px;
+    text-align: center;
+    border-radius: 5px;
   }
 
+  .header {
+    width: fit-content;
+    background: black;
+    position: sticky;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.45);
+    top: 0px;
+    z-index: 10;
+    text-align: center;
+    overflow: hidden;
+    font-family: Open Sans, Roboto, Arial, Helvetica, sans-serif, SimSun;
+    float: left;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(80, 82, 81, 0.24);
+  }
+
+  .nav>.nav-links {
+    font-size: 18px;
+    display: inline;
+    /*float: right;
+    position: fixed;*/
+    overflow: hidden;
+    bottom: 0;
+  }
+
+  .nav-link, .nav>.nav-links>ul li a {
+    color: white;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    padding: 0 8px;
+    text-decoration: none;
+  }
+
+  .nav>.nav-links>ul {
+    list-style: none;
+    position: relative;
+  }
