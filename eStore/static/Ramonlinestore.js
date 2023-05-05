@@ -242,9 +242,6 @@ $(document).ready(function () {
       $(".copy span").text("Items reserved successfully");
     }
 
-    else {
-      GetProductDetailHtml();        
-    }
 
 });
 
@@ -286,76 +283,6 @@ function SetProductDetailCSS() {
     });
 }
 
-
-
-function GetProductDetailHtml(jsonarray) {
-    $("#cart").hide();
-    $("#productdetail").show();
-    medialist = "";
-    featurelist = "";
-    productimg = "";
-    categorylinkhtml = "";
-    final_rating = 0;
-    actual_rating = 0;
-    UserRating="";
-    userRatingHtml="";
-
-    /*product_data = websiteproductslist.filter(function (i) {
-        return i.id == String(getUrlParameter('id'));
-    });*/
-
-    product_data=websiteproductslist;
-
-   
-
-
-    categorylinkhtml = "<a style='color:#02AAB0;text-decoration: none;font-weight:500' href='?cat=" + product_data[0].category.trim() + "'>" + product_data[0].category + "</a>";
-    $("#categorylink").append(categorylinkhtml);
-
-    medialist = "<span data-pic='url(" + product_data[0].featuredimage + ")' class='active'> <img src='" + product_data[0].featuredimage + "'></img> </span>";
-
-    for (var i = 0; i < product_data[0].additionalimages.length; i++) {
-        medialist += "<span data-pic='url(" + product_data[0].additionalimages[i].image + ")'> <img src='" + product_data[0].additionalimages[i].image + "'></img> </span>";
-    }
-
-    productimg = "<li class='product_card_images'> <div style='display:flex;flex-direction:column;'> <div class='product-pic'></div>  <div class='product-colors'>" + medialist + "</div></div></li>";
-
-
-    if (product_data[0].features.length == 1) {
-        productimg += "<li class='product_card_desc'> <div style='display:flex;flex-direction:column;'><b><span>" + product_data[0].description + "</span></b><br/>" + ratinghtml + " </span> <br/> <b><span style='color:brown'>" + product_data[0].price + "<div style='float:left'> <div style='align-items:center'> <label id='lblqty'>Quantity</label> <select id='productqty'></select> </div> <button id='product_add_to_cart' onclick='AddtoCart()' class='btn card_btn btn-grad'>Add to Cart</button> </div> </span></b></div></li> ";
-    }
-
-    else {
-
-        for (var i = 0; i < product_data[0].features.length; i++) {
-            if (i == 0) {
-                productimg += "<li class='product_card_desc'> <div style='display:flex;flex-direction:column;'><b><span>" + product_data[0].description + "</span></b><br/>" + ratinghtml + " </span> <br/> <b><span style='color:brown'>" + product_data[0].price + " <br/> <div style='align-items:center'><label id='lblqty'>Quantity &nbsp;</label> <select id='productqty'> </select> </div> <button id='product_add_to_cart' onclick='AddtoCart()' class='btn card_btn btn-grad'>Add to Cart</button> </span></b> <ul style='padding-left:15px'><br/>";
-            }
-
-            if (i != 0 && i == product_data[0].features.length - 1) {
-                productimg += "<li><span>" + product_data[0].features[i].feature + "</span></li></ul></div></li>";
-            }
-
-            if (i != 0 && i != product_data[0].features.length - 1) {
-                productimg += "<li><span>" + product_data[0].features[i].feature + "</span></li>";
-            }
-        }
-    }
-    $("#product-card").append(productimg);
-    $("#product_name").text(product_data[0].name);
-    $(".product-pic").css("background-image", "url('" + product_data[0].featuredimage + "')");
-    $(".product-pic").css("background-repeat", "no-repeat");
-    $(".product-pic").css("background-position", "left center");
-
-    for (var i = 0; i < product_data[0].stockcount; i++) {
-        $('#productqty').append('<option value="">' + (i + 1) + '</option>');
-    }
-
-
-
-
-    $(".copy span").append(userRatingHtml);
-}
 
 
 function GetProductHtml(jsonarray) {
