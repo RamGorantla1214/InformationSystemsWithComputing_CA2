@@ -2,7 +2,7 @@ websiteproductslist =
     [
         {
             "id": "1",
-            "name": "T Shirt 1",
+            "name": "Product 1",
             "category": "Formal Shirts",
             "featuredimage": "../static/product_images/img1.jpg",
             "price": "100€"
@@ -10,7 +10,7 @@ websiteproductslist =
 
         {
             "id": "2",
-            "name": "T Shirt 2",
+            "name": "Product 2",
             "category": "Tees",
             "featuredimage": "../static/product_images/img2.jpg",
             "price": "50€"
@@ -18,7 +18,7 @@ websiteproductslist =
 
         {
             "id": "3",
-            "name": "T Shirt 3",
+            "name": "Product 3",
             "category": "Formal Shirts",
             "featuredimage": "../static/product_images/img3.jpg",
             "price": "70€"
@@ -26,7 +26,7 @@ websiteproductslist =
 
         {
             "id": "4",
-            "name": "T Shirt 4",
+            "name": "Product 4",
             "category": "Formal Shirts",
             "featuredimage": "../static/product_images/img4.jpg",
             "price": "110€"
@@ -34,7 +34,7 @@ websiteproductslist =
 
         {
             "id": "5",
-            "name": "T Shirt 5",
+            "name": "Product 5",
             "category": "Tees",
             "featuredimage": "../static/product_images/img5.jpg",
             "price": "150€"
@@ -42,7 +42,7 @@ websiteproductslist =
 
         {
             "id": "6",
-            "name": "T Shirt 6",
+            "name": "Product 6",
             "category": "Tees",
             "featuredimage": "../static/product_images/img6.jpg",
             "price": "60€"
@@ -50,7 +50,7 @@ websiteproductslist =
 
         {
             "id": "7",
-            "name": "T Shirt 7",
+            "name": "Product 7",
             "category": "Tees",
             "featuredimage": "../static/product_images/img7.jpg",
             "price": "70€"
@@ -58,7 +58,7 @@ websiteproductslist =
 
         {
             "id": "8",
-            "name": "T Shirt 8",
+            "name": "Product 8",
             "category": "Tees",
             "featuredimage": "../static/product_images/img8.jpg",
             "price": "90€"
@@ -66,7 +66,7 @@ websiteproductslist =
 
         {
             "id": "9",
-            "name": "T Shirt 9",
+            "name": "Product 9",
             "category": "Tees",
             "featuredimage": "../static/product_images/img9.jpg",
             "price": "80€"

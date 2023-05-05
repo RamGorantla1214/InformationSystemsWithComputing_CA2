@@ -8,7 +8,7 @@ DB_NAME = "database.db"
 
 
 
-def eShopApplication():
+def Ram_eStore():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'ram key'
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'

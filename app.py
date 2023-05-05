@@ -1,6 +1,8 @@
 from flask import Flask,render_template
+from eStore import Ram_eStore
 
-app = Flask(__name__)
+app = Ram_eStore()
+
 @app.route('/')
 def hello():
  return render_template('home.html')
